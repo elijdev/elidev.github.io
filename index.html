@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elij Dev</title>
+        <style>
+            @keyframes slideInLeft{
+                from {
+                    transform: translateX(-300px);
+                }
+                to {
+                    transform: translateX(0px);
+                }
+            }
+            .slideInLeft{
+                animation: slideInLeft 1s ease-out;
+            }
+            .slideInLeft1{
+                animation: slideInLeft 1.5s ease-out;
+            }
+            .logo{
+                    width:256px;
+                    height:256px;
+            }
+            .mini{
+                display:block;
+                    width: 64px;
+                    height: 64px;            
+            }
+            html { 
+                margin:0px;
+                background: url(bg1.png) no-repeat center center;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .center{
+                margin-left:auto;
+                margin-right:auto;
+            }
+            h1{
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .container {
+                float: left;
+                padding-left: 10px;
+                padding-right: 10px;
+                position: relative;
+                width: 64px;
+
+                transition: transform 0.3s;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 20%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #61777f00;
+
+                transition: transform 0.3s;
+            }
+
+            .container:hover {
+                opacity: 1;
+                transform: translateY(-10px)
+            }
+
+            .container:hover .overlay {
+                opacity: 1;
+                transform: translateY(+85px)
+            }
+
+            .text {
+                color: black;
+                font-size: 15px;
+                font-weight: bold;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <br><br>
+        <table class="center">
+            <tr>
+                <td><img class="logo" src="Logo.png" alt="Elij Dev"></a></td>
+            </tr>
+        </table>
+        <br>
+        <h1 class="slideInLeft">Socials:</h1>
+        <table class="center">
+            <tr>
+                <td>
+                    <div class="container">
+                        <a href="https://twitter.com/ElijDev" target="_blank" rel="noopener noreferrer"><img class="mini" src="twitter.png" alt="Twitter"></a>
+                        <div class="overlay">
+                            <a href="https://twitter.com/ElijDev" target="_blank" rel="noopener noreferrer"><div class="text">Twitter</div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <a href="https://www.facebook.com/profile.php?id=61557198765022" target="_blank" rel="noopener noreferrer"><img class="mini" src="fb.png" alt="Facebook"></a>
+                        <div class="overlay">
+                            <a href="https://www.facebook.com/profile.php?id=61557198765022" target="_blank" rel="noopener noreferrer"><div class="text">Facebook</div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <a href="https://www.youtube.com/channel/UCcrxpKiWurJwlNVTMK-p7lg" target="_blank" rel="noopener noreferrer"><img class="mini" src="youtube.png" alt="Youtube"></a>
+                        <div class="overlay">
+                            <a href="https://www.youtube.com/channel/UCcrxpKiWurJwlNVTMK-p7lg" target="_blank" rel="noopener noreferrer"><div class="text">Youtube</div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <a href="https://www.instagram.com/elijdev/" target="_blank" rel="noopener noreferrer"><img class="mini" src="instagram.jpg" alt="Instagram"></a>
+                        <div class="overlay">
+                            <a href="https://www.instagram.com/elijdev/" target="_blank" rel="noopener noreferrer"><div class="text">Instagram</div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <a href="https://ko-fi.com/elijdev" target="_blank" rel="noopener noreferrer"><img class="mini" src="ko-fi.png" alt="Ko-fi" ></a>
+                        <div class="overlay">
+                            <a href="https://ko-fi.com/elijdev" target="_blank" rel="noopener noreferrer"><div class="text">Ko-fi</div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <a href="https://www.threads.net/@elijdev" target="_blank" rel="noopener noreferrer"><img class="mini" src="threads.png" alt="Threads" ></a>
+                        <div class="overlay">
+                            <a href="https://www.threads.net/@elijdev" target="_blank" rel="noopener noreferrer"><div class="text">Threads</div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <a href="https://www.pinterest.com/elijdev/" target="_blank" rel="noopener noreferrer"><img class="mini" src="pinterest.png" alt="Pinterest" ></a>
+                        <div class="overlay">
+                            <a href="https://www.pinterest.com/elijdev/" target="_blank" rel="noopener noreferrer"><div class="text">Pinterest</div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <a href="https://www.tiktok.com/@elijdev" target="_blank" rel="noopener noreferrer"><img class="mini" src="tiktok.png" alt="Tiktok" ></a>
+                        <div class="overlay">
+                            <a href="https://www.tiktok.com/@elijdev" target="_blank" rel="noopener noreferrer"><div class="text">Tiktok</div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <a href="https://elijdev.itch.io/" target="_blank" rel="noopener noreferrer"><img class="mini" src="itchio.png" alt="itch.io" ></a>
+                        <div class="overlay">
+                            <a href="https://elijdev.itch.io/" target="_blank" rel="noopener noreferrer"><div class="text">Itch.io</div></a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <a href="https://github.com/elijdev/Project_Website" target="_blank" rel="noopener noreferrer"><img class="mini" src="github.png" alt="github" ></a>
+                        <div class="overlay">
+                            <a href="https://github.com/elijdev/Project_Website" target="_blank" rel="noopener noreferrer"><div class="text">Github</div></a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <h1 class="slideInLeft1">Contact Me:</h1>
+        <table class="center">
+            <tr>
+                <td>
+                    <div class="container">
+                        <a href="mailto:elij.dev96@gmail.com"><img class="mini" src="email.jpg" alt="Email Us"></a>
+                        <div class="overlay">
+                            <a href="mailto:elij.dev96@gmail.com"><div class="text">Send Email</div></a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>  
+    </body>
+</html>
